@@ -1,5 +1,5 @@
 {
-  "name": "vigor-project",
+  "name": "fe-learn",
   "version": "0.0.1",
   "description": "vigor project with standard config",
   "main": "index.js",
@@ -59,7 +59,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fengyinchao/vigor-project.git"
+    "url": "git+https://github.com/fengyinchao/fe-learn.git"
   },
   "keywords": [
     "standard",
@@ -72,7 +72,7 @@
   "author": "fengyinchao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fengyinchao/vigor-project/issues"
+    "url": "https://github.com/fengyinchao/fe-learn/issues"
   },
-  "homepage": "https://github.com/fengyinchao/vigor-project#readme"
+  "homepage": "https://github.com/fengyinchao/fe-learn#readme"
 }
