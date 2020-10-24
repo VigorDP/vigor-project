@@ -1,0 +1,32 @@
+.scene {
+  perspective: 6000px;
+  width: 200px;
+  height: 300px;
+  border: 1px solid red;
+}
+.scene .stage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 4s;
+  position: relative;
+}
+.scene .stage:hover {
+  transform: rotateY(180deg);
+}
+
+.scene .stage .actor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: green;
+}
+
+.scene .stage .actor-back {
+  transform: rotateY(180deg);
+  background-color: yellow;
+}
