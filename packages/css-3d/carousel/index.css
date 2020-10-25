@@ -13,11 +13,8 @@ body {
   height: 100%;
   border-radius: 10px;
   transform-style: preserve-3d;
-  transition: transform 4s;
+  animation: self-rotate 10s linear infinite;
   position: relative;
-}
-.scene .stage:hover {
-  transform: rotateY(180deg);
 }
 
 .scene .stage .actor {
@@ -67,4 +64,13 @@ body {
 .actor:nth-child(9) {
   background-color: lightgrey;
   transform: rotateY(320deg) translateZ(288px);
+}
+
+@keyframes self-rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
