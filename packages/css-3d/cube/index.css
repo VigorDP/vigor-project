@@ -12,7 +12,11 @@
   border-radius: 10px;
   transform-style: preserve-3d;
   position: relative;
-  animation: self-rotate 5s infinite;
+  transition: transform 1s linear;
+}
+
+.scene .stage:hover {
+  transform: translateZ(-150px) translateX(-150px) rotateY(-90deg);
 }
 
 .scene .stage .actor {
@@ -25,7 +29,7 @@
   font-size: 30px;
   color: white;
   text-align: center;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   background-color: purple;
 }
 
