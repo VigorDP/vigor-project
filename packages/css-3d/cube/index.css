@@ -1,0 +1,62 @@
+.scene {
+  perspective: 6000px;
+  perspective-origin: -650px -650px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 200px 200px;
+}
+.scene .stage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  position: relative;
+  animation: self-rotate 5s infinite;
+}
+
+.scene .stage .actor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 300px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  backface-visibility: hidden;
+  background-color: purple;
+}
+
+.scene .stage .actor-back {
+  transform: rotateY(180deg) translateZ(300px);
+  background-color: purple;
+}
+
+.scene .stage .actor-left {
+  transform: rotateY(-90deg) translateZ(150px) translateX(-150px);
+  background-color: black;
+}
+.scene .stage .actor-right {
+  transform: rotateY(90deg) translateZ(150px) translateX(150px);
+  background-color: black;
+}
+.scene .stage .actor-top {
+  transform: rotateX(90deg) translateZ(150px) translateY(-150px);
+  background-color: red;
+}
+.scene .stage .actor-bottom {
+  transform: rotateX(-90deg) translateZ(150px) translateY(150px);
+  background-color: red;
+}
+
+@keyframes self-rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 360deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
