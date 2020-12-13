@@ -1,0 +1,38 @@
+body {
+  background: #dddddd;
+}
+
+option {
+  padding-right: 5px;
+}
+
+#iconCanvas {
+  background: #eeeeef;
+  border: thin solid #aaaaaa;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
+  border-radius: 8px;
+}
+
+#drawingCanvas {
+  background: #ffffff;
+  border: thin solid #aaaaaa;
+  cursor: crosshair;
+  margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
+  border-radius: 12px;
+}
+
+#controls {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
+
+select {
+  margin-right: 15px;
+}
+
+#snapshotButton {
+  margin-left: 150px;
+}
