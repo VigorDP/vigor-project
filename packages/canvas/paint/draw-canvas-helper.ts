@@ -138,13 +138,13 @@ function mouseMoveInDrawingCanvas(loc, drawingContext, drawingCanvas) {
 }
 
 function mouseUpInDrawingCanvas(loc, drawingContext) {
-  if (IconCanvasUtils.selectedFunction !== 'erase' && IconCanvasUtils.selectedFunction !== 'slinky') {
+  if (IconCanvasUtils.selectedFunction !== 'erase') {
     restoreDrawingSurface(drawingContext);
   }
 
   if (dragging) {
     if (IconCanvasUtils.selectedFunction === 'erase') {
-      // eraseLast(drawingContext);
+      eraseLast(drawingContext);
     } else if (IconCanvasUtils.selectedFunction === 'path' || IconCanvasUtils.selectedFunction === 'pathClosed') {
       endPath(loc, drawingContext);
     } else {

@@ -1,5 +1,5 @@
 body {
-  background: #dddddd;
+  background: transparent;
 }
 
 option {
@@ -14,8 +14,8 @@ option {
   border-radius: 8px;
 }
 
-#drawingCanvas {
-  background: #ffffff;
+#drawCanvas {
+  background: transparent;
   border: thin solid #aaaaaa;
   cursor: crosshair;
   margin-left: 10px;
